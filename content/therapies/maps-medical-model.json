@@ -1,0 +1,22 @@
+{
+  "slug": "maps-medical-model",
+  "name": "MAPS Medical Model (Medical Academy of Pediatric Special Needs)",
+  "category": "Biomedical & Medical",
+  "summary": "A physician network applying individualized medical workups (nutrition, gut health, metabolic and immune testing) alongside standard autism care.",
+  "description": "MAPS refers to a network of physicians, trained through the Medical Academy of Pediatric Special Needs, who treat autism using an individualized 'biomedical' model. Rather than a single therapy, it is a clinical approach: doctors order lab panels (e.g. gut microbiome, nutrient levels, metabolic markers) and build a treatment plan that may include dietary changes, supplements, and management of co-occurring conditions like gastrointestinal issues or sleep problems. Families often pursue MAPS alongside, not instead of, behavioral and developmental therapies.",
+  "claimedBenefits": [
+    "Identifies and treats co-occurring medical conditions (GI issues, nutrient deficiencies, sleep problems) that may worsen behavior",
+    "Individualized plans based on lab testing rather than a one-size-fits-all protocol",
+    "Coordinates biomedical and behavioral care under one physician network"
+  ],
+  "evidenceNotes": "Individual components (treating diagnosed GI disease, correcting a confirmed nutrient deficiency) are standard medicine with real evidence behind them. The broader biomedical/MAPS framework as an autism-specific treatment paradigm is not itself a single validated protocol, and some recommended tests/supplements go beyond what major pediatric bodies endorse. Families are encouraged to discuss any MAPS-recommended workup with their child's regular pediatrician.",
+  "evidenceLevel": "emerging",
+  "regions": ["United States", "Canada", "United Kingdom"],
+  "sources": [
+    { "label": "Autism Speaks - Treatments Overview", "url": "https://www.autismspeaks.org/" },
+    { "label": "NIH National Center for Complementary and Integrative Health", "url": "https://www.nccih.nih.gov/" }
+  ],
+  "image": "maps-medical-model.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

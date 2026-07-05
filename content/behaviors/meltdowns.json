@@ -1,0 +1,32 @@
+{
+  "slug": "meltdowns",
+  "name": "Meltdowns",
+  "summary": "An intense, involuntary response to being overwhelmed — different from a tantrum in that it isn't goal-directed and the child usually can't self-stop it on request.",
+  "triggers": [
+    "Sensory overload (loud noise, bright light, crowded spaces)",
+    "Unexpected changes to routine or transitions",
+    "Communication frustration when needs aren't understood",
+    "Fatigue, hunger, or illness lowering tolerance"
+  ],
+  "remedies": [
+    {
+      "text": "Move to a quieter, dimmer space and reduce sensory input rather than trying to talk the child out of it",
+      "evidenceLevel": "anecdotal"
+    },
+    {
+      "text": "Use a visual schedule ahead of transitions so changes are predictable",
+      "evidenceLevel": "emerging"
+    },
+    {
+      "text": "Deep pressure (weighted blanket, firm hug if welcomed) to help with sensory regulation",
+      "evidenceLevel": "anecdotal"
+    }
+  ],
+  "sources": [
+    { "label": "Autism Speaks - Meltdowns vs. Tantrums", "url": "https://www.autismspeaks.org/" },
+    { "label": "r/autism community discussion", "url": "https://www.reddit.com/r/autism/" }
+  ],
+  "image": "meltdowns.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}
