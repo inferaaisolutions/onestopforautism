@@ -21,7 +21,12 @@ function readJsonDir<T>(subdir: string, schema: z.ZodType<T>): T[] {
     .readdirSync(dir)
     .filter((f) => f.endsWith(".json"))
     .map((f) => {
-      const raw = JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8"));
+      let raw;
+      try {
+        raw = JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8"));
+      } catch (err) {
+        throw new Error(`Malformed JSON in content file ${subdir}/${f}: ${(err as Error).message}`);
+      }
       const result = schema.safeParse(raw);
       if (!result.success) {
         throw new Error(`Invalid content file ${subdir}/${f}: ${result.error.message}`);

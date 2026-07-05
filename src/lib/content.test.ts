@@ -1,4 +1,6 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, beforeEach, afterEach } from "vitest";
+import fs from "fs";
+import path from "path";
 import { getTherapies, getTherapyBySlug, getBehaviors, getNews, getResources } from "./content";
 
 describe("content loaders", () => {
@@ -31,6 +33,46 @@ describe("content loaders", () => {
     const news = getNews();
     for (let i = 1; i < news.length; i++) {
       expect(news[i - 1].date >= news[i].date).toBe(true);
+    }
+  });
+
+  it("throws descriptive error when therapy schema validation fails", () => {
+    const therapiesDir = path.join(process.cwd(), "content", "therapies");
+    const invalidTherapyFile = path.join(therapiesDir, "__test-invalid-schema__.json");
+
+    try {
+      // Create invalid therapy with empty slug (schema requires min(1))
+      fs.writeFileSync(invalidTherapyFile, JSON.stringify({
+        slug: "",
+        name: "Invalid Therapy",
+        description: "Test",
+        evidenceLevel: "clinical",
+        sources: ["http://example.com"]
+      }));
+
+      expect(() => getTherapies()).toThrow(/Invalid content file therapies\/__test-invalid-schema__\.json/);
+    } finally {
+      // Clean up
+      if (fs.existsSync(invalidTherapyFile)) {
+        fs.unlinkSync(invalidTherapyFile);
+      }
+    }
+  });
+
+  it("throws descriptive error when JSON is malformed", () => {
+    const therapiesDir = path.join(process.cwd(), "content", "therapies");
+    const malformedJsonFile = path.join(therapiesDir, "__test-malformed-json__.json");
+
+    try {
+      // Create file with syntactically invalid JSON
+      fs.writeFileSync(malformedJsonFile, "{ not valid json");
+
+      expect(() => getTherapies()).toThrow(/Malformed JSON in content file therapies\/__test-malformed-json__\.json/);
+    } finally {
+      // Clean up
+      if (fs.existsSync(malformedJsonFile)) {
+        fs.unlinkSync(malformedJsonFile);
+      }
     }
   });
 });
