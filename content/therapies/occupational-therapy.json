@@ -1,0 +1,24 @@
+{
+  "slug": "occupational-therapy",
+  "name": "Occupational Therapy",
+  "category": "Sensory & Movement",
+  "summary": "A licensed clinical service that helps autistic children build the sensory-processing, motor, self-care, and daily-living skills needed for everyday participation.",
+  "description": "Occupational therapy (OT) is delivered by licensed occupational therapists and focuses on a child's ability to participate in daily 'occupations' — self-care (dressing, feeding, toileting), fine motor skills (handwriting, using utensils), play, and school participation. For autistic children, OT frequently addresses sensory processing differences (over- or under-responsiveness to touch, sound, movement) using structured sensory-integration approaches, alongside motor planning and coordination work. Therapy is individualized, often play-based, and commonly delivered alongside speech-language therapy and behavioral intervention as part of a broader care team.",
+  "claimedBenefits": [
+    "Improves fine and gross motor skills and coordination",
+    "Helps regulate responses to sensory input (touch, sound, movement, texture)",
+    "Builds independence in self-care and daily-living tasks",
+    "Supports participation in school, play, and family activities"
+  ],
+  "evidenceLevel": "clinical",
+  "evidenceNotes": "Occupational therapy is a mainstream, professionally regulated service, and Ayres Sensory Integration-based OT is recognized in evidence-based practice reviews as a supported approach for autistic children, with moderate-quality evidence for improving attention, self-regulation, and participation. As with other developmental therapies, the strength of evidence varies by specific technique and outcome measured, so goals should be individualized, functional, and tracked over time with the treating therapist.",
+  "regions": ["United States", "Canada", "United Kingdom", "Australia"],
+  "sources": [
+    { "label": "AOTA - Occupational Therapy Practice Guidelines for Individuals With Autism Spectrum Disorder", "url": "https://library.aota.org/OT_Practice_Guidelines_Autism/" },
+    { "label": "CDC - Treatment and Intervention for Autism Spectrum Disorder", "url": "https://www.cdc.gov/autism/treatment/index.html" },
+    { "label": "PMC - Systematic Review of Sensory-Based Interventions for Children and Youth (2015-2024)", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12658592/" }
+  ],
+  "image": "occupational-therapy.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

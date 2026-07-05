@@ -1,0 +1,22 @@
+{
+  "slug": "lyme-protocols",
+  "name": "Lyme & Co-Infection Protocols",
+  "category": "Biomedical & Medical",
+  "summary": "Long-term antimicrobial and supplement regimens offered by some practitioners under the theory that undiagnosed 'chronic Lyme disease' or related infections contribute to a child's autism symptoms.",
+  "description": "Some practitioners promote the idea that autistic children have an undiagnosed, ongoing infection with Borrelia burgdorferi (the bacteria that causes Lyme disease) or related co-infections (such as Bartonella), often using non-standard laboratory testing criteria after a child has tested negative on standard CDC-recommended two-tiered testing. Based on this diagnosis, they may prescribe extended courses of antibiotics, antimicrobial herbal protocols, and supplements, sometimes for months or years, with the goal of treating the presumed infection and, in turn, improving autism symptoms.",
+  "claimedBenefits": [
+    "Proponents claim treating an underlying tick-borne infection can reduce autism symptoms and improve overall health",
+    "Framed as addressing a root medical cause rather than managing symptoms alone"
+  ],
+  "evidenceLevel": "anecdotal",
+  "evidenceNotes": "This approach is controversial and not supported by mainstream infectious disease guidance. The CDC and the Infectious Diseases Society of America do not recognize 'chronic Lyme disease' as a valid diagnosis for prolonged symptoms in the absence of confirmed active infection, and CDC-recommended testing in autistic children has generally not found evidence of Borrelia infection; the CDC states that extended antibiotic courses are unlikely to help patients with persistent symptoms after standard treatment and have documented serious harm, including bacterial bloodstream infections, from long-term antibiotic use for a 'chronic Lyme' diagnosis. There is no accepted causal link establishing that Lyme disease causes autism. Because this protocol can involve real medical risk (from prolonged antibiotic use) as well as significant cost, any suspected tick-borne illness should be diagnosed and treated using CDC-recommended testing and guidelines through a physician, not through non-standard testing or self-directed protocols.",
+  "regions": ["United States"],
+  "sources": [
+    { "label": "CDC - Chronic Symptoms and Lyme Disease", "url": "https://www.cdc.gov/lyme/signs-symptoms/chronic-symptoms-and-lyme-disease.html" },
+    { "label": "CDC - Clinical Care of Lyme Disease", "url": "https://www.cdc.gov/lyme/treatment/index.html" },
+    { "label": "PubMed - Divergent Opinions of Proper Lyme Disease Diagnosis and Implications for Children Co-Morbid With Autism Spectrum Disorder", "url": "https://pubmed.ncbi.nlm.nih.gov/24986703/" }
+  ],
+  "image": "lyme-protocols.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

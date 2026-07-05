@@ -1,0 +1,23 @@
+{
+  "slug": "functional-medicine",
+  "name": "Functional Medicine",
+  "category": "Biomedical & Medical",
+  "summary": "A root-cause-focused clinical approach that uses lab testing, diet, and lifestyle changes to try to address underlying imbalances thought to contribute to autism symptoms.",
+  "description": "Functional medicine is a whole-body clinical philosophy, not a single therapy. Practitioners (often physicians or naturopaths) order extensive lab panels — gut microbiome analysis, food sensitivity testing, nutrient and heavy-metal levels, hormone and metabolic markers — and design individualized plans built around diet changes, supplements, and lifestyle modification. Applied to autism, the premise is that gut health, inflammation, nutrient status, or environmental exposures contribute to symptoms, and that correcting these can improve behavior, communication, or GI comfort. It overlaps heavily with the broader 'biomedical' autism treatment movement and is often pursued alongside, not instead of, standard developmental and behavioral therapies.",
+  "claimedBenefits": [
+    "Identifies and addresses underlying GI, nutritional, or metabolic issues that may be contributing to behavior or discomfort",
+    "Individualized, testing-driven plan rather than a generic protocol",
+    "Proponents report improvements in gut symptoms, sleep, and behavior in some children"
+  ],
+  "evidenceNotes": "Complementary and alternative medicine (CAM) approaches, including functional medicine, are used by a large share of autism families, but a 2025 umbrella review of CAM/integrative approaches for autism found no high-quality evidence supporting efficacy for core or associated symptoms; where benefit was reported, it rested on very low-quality evidence. Some individual elements (treating a diagnosed GI condition, correcting a confirmed nutrient deficiency) are standard, well-supported medicine, but the broader functional-medicine framework as an autism-specific treatment is not itself validated, and extensive lab panels and supplement regimens can be costly and are not endorsed as routine care by major pediatric bodies. Families are encouraged to review any functional-medicine recommendations with their child's regular pediatrician.",
+  "evidenceLevel": "anecdotal",
+  "regions": ["United States", "Canada", "United Kingdom"],
+  "sources": [
+    { "label": "Autism Speaks - Complementary Treatments for Autism", "url": "https://www.autismspeaks.org/expert-opinion/complementary-treatments-autism" },
+    { "label": "PMC - A Review of Complementary and Alternative Treatments for Autism Spectrum Disorders", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3515887/" },
+    { "label": "NIH National Center for Complementary and Integrative Health", "url": "https://www.nccih.nih.gov/" }
+  ],
+  "image": "functional-medicine.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "sound-therapy",
+  "name": "Sound Therapy (Tomatis / Auditory Integration Training)",
+  "category": "Sensory & Movement",
+  "summary": "Programs such as Tomatis Method and Auditory Integration Training (AIT) that use filtered or modified music and sound, on the unproven premise that they can retrain auditory processing and reduce autism symptoms.",
+  "description": "Sound-based therapies for autism include Auditory Integration Training (AIT) and the Tomatis Method, among similar approaches. These involve listening to music or sound that has been electronically filtered or modified (e.g. randomly altering frequency and intensity) over repeated sessions, typically delivered through headphones at a private practitioner's clinic. Proponents theorize that autistic children have auditory processing abnormalities or hypersensitivities that these programs can 're-train', in turn improving language, behavior, and sensory tolerance.",
+  "claimedBenefits": [
+    "Proponents claim reduced sound sensitivity and auditory overload",
+    "Claimed improvements in language development and behavior",
+    "Marketed as addressing an underlying auditory-processing cause of autism symptoms"
+  ],
+  "evidenceLevel": "anecdotal",
+  "evidenceNotes": "A Cochrane systematic review of AIT and other sound therapies found no evidence to support their use for autism: included studies were too few and methodologically weak to draw reliable conclusions, and a randomized, sham-controlled trial of Tomatis therapy found children receiving the real intervention progressed no differently than those receiving a placebo (sham) version. The American Speech-Language-Hearing Association has stated that AIT has not met scientific standards for efficacy that would justify its practice by audiologists or speech-language pathologists. A small number of more recent open-label studies report improvement with Tomatis training, but these lack the blinded, controlled design needed to rule out placebo or natural developmental change, so the overall evidence base remains weak.",
+  "regions": ["United States", "France", "Canada", "United Kingdom"],
+  "sources": [
+    { "label": "Cochrane - Auditory Integration Therapy for Autism Spectrum Disorders", "url": "https://www.cochrane.org/evidence/CD003681_auditory-integration-therapy-autism-spectrum-disorders" },
+    { "label": "ASHA - Auditory Integration Training (Technical Report)", "url": "https://www.asha.org/policy/tr2004-00260/" },
+    { "label": "PMC - Improvement of Symptoms in Children With Autism by TOMATIS Training: A Cross-Sectional and Longitudinal Study", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10982311/" }
+  ],
+  "image": "sound-therapy.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "mert",
+  "name": "MERT (Magnetic e-Resonance Therapy)",
+  "category": "Biomedical & Medical",
+  "summary": "A proprietary, individualized form of transcranial magnetic stimulation marketed by private clinics for autism, ADHD, and other conditions, based on limited clinical evidence.",
+  "description": "MeRT (Magnetic e-Resonance Therapy) is a trademarked, clinic-delivered variant of transcranial magnetic stimulation (TMS). Providers first record an EEG and sometimes an ECG to identify a patient's individual brainwave pattern, then use that data to customize the frequency and location of magnetic pulses delivered to the scalp over a series of sessions. Standard TMS is FDA-cleared for certain conditions like depression and OCD in adults, but MeRT itself is not FDA-approved for autism, and it is offered through a small number of private 'brain treatment center' franchises rather than as part of mainstream pediatric care.",
+  "claimedBenefits": [
+    "Marketed as improving speech, social engagement, sleep, and reducing repetitive behaviors and anxiety",
+    "Framed as personalized, EEG-guided targeting rather than generic stimulation",
+    "Non-invasive and drug-free delivery"
+  ],
+  "evidenceNotes": "Evidence for MeRT specifically in autism is preliminary. Some small chart-review studies and case series report improvement, and related rTMS research has shown mixed early results for social and communication symptoms, but independent researchers and advocacy groups note that much of the published support comes from studies affiliated with the clinics selling the treatment, without double-blind, sham-controlled designs. No major medical body currently endorses MeRT as a standard autism treatment, and families should treat marketing claims with caution, verify any research citations independently, and discuss the (often significant) cost and lack of insurance coverage before pursuing it.",
+  "evidenceLevel": "anecdotal",
+  "regions": ["United States"],
+  "sources": [
+    { "label": "ASAT - Response to LA Times Investigation into MeRT", "url": "https://asatonline.org/media_watch/asatrespondstolatimes/" },
+    { "label": "ClinicalTrials.gov - Chart Review to Evaluate the Safety and Efficacy of MeRT on Subjects With ASD", "url": "https://clinicaltrials.gov/study/NCT02758496" },
+    { "label": "PMC - Use of Transcranial Magnetic Stimulation in Autism Spectrum Disorders", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4519010/" }
+  ],
+  "image": "mert.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

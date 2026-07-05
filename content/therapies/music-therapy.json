@@ -1,0 +1,23 @@
+{
+  "slug": "music-therapy",
+  "name": "Music Therapy",
+  "category": "Sensory & Movement",
+  "summary": "A structured, therapist-led use of musical activities such as singing, playing instruments, and movement to support engagement, communication, and emotional regulation.",
+  "description": "Music therapy is delivered by credentialed music therapists who use musical activities — singing, instrument play, rhythm and movement games, and improvisation — as a structured, individualized or group intervention. Sessions are goal-directed, targeting outcomes such as social engagement, joint attention, emotional regulation, and quality of life, rather than teaching music itself. It is often used as a complement to, not a replacement for, core developmental and communication therapies.",
+  "claimedBenefits": [
+    "Increases overall engagement and global improvement measures",
+    "Supports emotional regulation and reduction of overall autism symptom severity",
+    "Improves quality of life",
+    "Offers an engaging, low-pressure format for building interaction skills"
+  ],
+  "evidenceLevel": "emerging",
+  "evidenceNotes": "A 2022 Cochrane systematic review (26 studies, over 1,100 participants) found music therapy is probably associated with improved global functioning, reduced overall autism symptom severity, and better quality of life compared with standard care or placebo therapy, with moderate-certainty evidence and no indication of increased adverse events. However, the same review found no clear evidence of benefit specifically for social interaction or verbal/non-verbal communication measured immediately after therapy, and certainty for those specific outcomes was rated low to very low. Music therapy is a promising, generally low-risk complementary approach, but should not be assumed to replace core communication or behavioral interventions.",
+  "regions": ["United States", "Canada", "United Kingdom", "Australia"],
+  "sources": [
+    { "label": "Cochrane - Music Therapy for Autistic People", "url": "https://www.cochrane.org/evidence/CD004381_music-therapy-autistic-people" },
+    { "label": "PMC - The Effect of Music Interventions in Autism Spectrum Disorder: A Systematic Review and Meta-Analysis", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12602440/" }
+  ],
+  "image": "music-therapy.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

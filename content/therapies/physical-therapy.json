@@ -1,0 +1,24 @@
+{
+  "slug": "physical-therapy",
+  "name": "Physical Therapy",
+  "category": "Sensory & Movement",
+  "summary": "A licensed clinical service addressing the gross-motor delays, coordination difficulties, and low physical activity levels common in autistic children.",
+  "description": "Physical therapy (PT) is delivered by licensed physical therapists and targets gross motor skills — walking, running, balance, coordination, posture, and motor planning (praxis) — that are frequently delayed in autistic children regardless of cognitive ability. PTs design individualized exercise and structured-play programs to build strength, coordination, and physical activity tolerance, which can in turn support participation in school, sports, and social settings where movement and motor confidence matter. PT is often used alongside occupational therapy, particularly for younger children with significant motor delays.",
+  "claimedBenefits": [
+    "Improves gross motor skills: balance, coordination, gait, and motor planning",
+    "Increases physical activity levels and physical confidence",
+    "Supports participation in school, sports, and social play",
+    "May indirectly support social-emotional development through improved mobility and engagement"
+  ],
+  "evidenceLevel": "clinical",
+  "evidenceNotes": "Motor impairments are well-documented in autism and are not fully explained by cognitive delay, and structured exercise and physical activity interventions are recognized as evidence-based practices. However, research specifically isolating physical therapy's effect on motor development in autism is still building, with wide variation between studies in the type, dose, and format of exercise interventions used, so outcomes should be tracked individually with the treating therapist rather than assumed from general autism literature.",
+  "regions": ["United States", "Canada", "United Kingdom", "Australia"],
+  "sources": [
+    { "label": "Choose PT (APTA) - Physical Therapy Guide to Autism Spectrum Disorder", "url": "https://www.choosept.com/guide/physical-therapy-guide-autism-spectrum-disorder" },
+    { "label": "APTA Magazine - Physical Therapy for People With Autism", "url": "https://www.apta.org/apta-magazine/archive/2018/07/01/physical-therapy-for-people-with-autism" },
+    { "label": "PubMed - Autism Spectrum Disorder: An Emerging Opportunity for Physical Therapy", "url": "https://pubmed.ncbi.nlm.nih.gov/22207463/" }
+  ],
+  "image": "physical-therapy.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

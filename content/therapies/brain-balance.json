@@ -1,0 +1,22 @@
+{
+  "slug": "brain-balance",
+  "name": "Brain Balance",
+  "category": "Alternative & Emerging",
+  "summary": "A commercial franchise program of sensory-motor exercises, based on a 'hemispheric imbalance' theory of autism and ADHD that most researchers consider scientifically unsupported.",
+  "description": "Brain Balance is a for-profit franchise offering after-school programs marketed for autism, ADHD, and learning differences. Centers combine physical exercises (balance, coordination, sensory-motor drills), academic drills, and dietary recommendations, built around the idea that the two hemispheres of the brain develop 'out of sync' and that targeted sensory-motor training can correct this imbalance. Programs typically run for months at significant cost and are not covered by most insurance.",
+  "claimedBenefits": [
+    "Marketed as improving attention, behavior, and academic performance",
+    "Claimed to improve motor coordination and sensory processing",
+    "Positioned as correcting an underlying brain hemisphere imbalance"
+  ],
+  "evidenceLevel": "anecdotal",
+  "evidenceNotes": "Independent journalism and researchers have found the scientific basis for Brain Balance's central 'hemispheric imbalance' theory to be a simplified, largely discredited framework, and the company's own published studies lack control groups and rigorous experimental design. The National Autism Center and other reviewers have concluded that current evidence does not support Brain Balance as a validated autism treatment, and its dietary claims (e.g. about gluten, dairy, or sugar affecting autism or ADHD) are not supported by solid evidence. Some general sensory-motor exercise components may produce modest benefits similar to other structured physical activity, but the program's specific claims and premium pricing are not backed by independent, peer-reviewed evidence.",
+  "regions": ["United States"],
+  "sources": [
+    { "label": "NPR - Brain Balance's Approach To Autism, ADHD: High Hopes, High Costs And Slim Science", "url": "https://www.npr.org/sections/health-shots/2018/06/18/616805015/cutting-edge-program-for-children-with-autism-and-adhd-rests-on-razor-thin-evide" },
+    { "label": "KQED - Little Evidence for Alternative Autism Treatment Sold by 'Brain Balance' Franchise", "url": "https://www.kqed.org/futureofyou/442896/little-evidence-for-brain-balances-alternative-autism-treatment" }
+  ],
+  "image": "brain-balance.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

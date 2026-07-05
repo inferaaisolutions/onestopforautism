@@ -1,0 +1,23 @@
+{
+  "slug": "fmt",
+  "name": "Fecal Microbiota Transplant (FMT)",
+  "category": "Biomedical & Medical",
+  "summary": "An investigational procedure that transfers stool from a screened donor to a recipient's gut, being studied in small trials for autism-related GI symptoms but not approved for this use.",
+  "description": "Fecal microbiota transplant (FMT) involves transferring screened donor stool (containing gut bacteria) into a recipient's gastrointestinal tract, typically via capsule, enema, or colonoscopy, with the aim of altering the gut microbiome. Its use in autism stems from research suggesting links between gut bacteria composition, gastrointestinal symptoms, and autism-related behaviors. FMT is an established, FDA-regulated treatment for a specific, unrelated condition (recurrent C. difficile infection), but its use for autism is experimental and investigational, conducted only within research studies and clinical trials rather than as approved, routine care.",
+  "claimedBenefits": [
+    "Small open-label studies report reduced GI symptoms alongside improvements in some autism-related behaviors",
+    "Proposed to work by rebalancing gut bacteria linked to GI and behavioral symptoms",
+    "Ongoing trials aim to clarify safety and effect size in children with ASD and GI symptoms"
+  ],
+  "evidenceLevel": "emerging",
+  "evidenceNotes": "FMT for autism is experimental and investigational — it is not FDA-approved for this use, and a 2023 systematic review found only a handful of small studies, none of them randomized controlled trials, meaning current results cannot rule out placebo effects, natural symptom fluctuation, or bias from open-label designs. Larger, blinded randomized trials (such as the ongoing FELICITA study) are needed before FMT could be considered an established autism treatment. FMT also carries real safety risks independent of autism-specific questions: the FDA has issued safety communications after cases of serious, sometimes fatal, infections caused by transmission of multi-drug-resistant organisms through inadequately screened donor stool, so this should only be pursued through a registered clinical trial with proper donor screening, not through unregulated providers.",
+  "regions": ["United States", "China"],
+  "sources": [
+    { "label": "PMC - Effect of Fecal Microbiota Transplantation in Children With Autism Spectrum Disorder: A Systematic Review", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10017995/" },
+    { "label": "ClinicalTrials.gov - FELICITA: Fecal Microbiota Transplantation in Children With ASD and GI Symptoms", "url": "https://clinicaltrials.gov/study/NCT07105267" },
+    { "label": "FDA - Fecal Microbiota for Transplantation: Safety Communication on Risk of Serious Adverse Reactions", "url": "https://www.fda.gov/safety/medical-product-safety-information/fecal-microbiota-transplantation-safety-communication-risk-serious-adverse-reactions-due" }
+  ],
+  "image": "fmt.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

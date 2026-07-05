@@ -1,0 +1,24 @@
+{
+  "slug": "speech-language-therapy",
+  "name": "Speech-Language Therapy",
+  "category": "Communication & Behavioral",
+  "summary": "A well-established clinical service delivered by licensed speech-language pathologists to build spoken language, social communication, and augmentative communication skills.",
+  "description": "Speech-language therapy is provided by licensed speech-language pathologists (SLPs) and addresses the wide range of communication differences seen in autism, including delayed spoken language, echolalia, pragmatic (social) language difficulties, and minimal or no verbal speech. Therapy is individualized and may include naturalistic, play-based language teaching, parent-implemented strategies, pragmatic/social-communication coaching for verbal individuals, and training in augmentative and alternative communication (AAC) tools such as picture systems or speech-generating devices for children with minimal speech. SLPs commonly work alongside occupational therapists, behavior analysts, and educators as part of a coordinated care team.",
+  "claimedBenefits": [
+    "Builds functional spoken language and vocabulary",
+    "Improves social/pragmatic communication (turn-taking, conversation, nonverbal cues)",
+    "Supports AAC use for children with minimal or no speech",
+    "Coordinates with families and other providers to reinforce communication goals across settings"
+  ],
+  "evidenceLevel": "clinical",
+  "evidenceNotes": "Speech-language therapy is a mainstream, evidence-based service recommended by major clinical and professional bodies. Parent-implemented naturalistic interventions and aided AAC show strong evidence for improving communication outcomes in autistic children with minimal speech, and pragmatic-language-focused therapy is widely used for verbal individuals. As with most autism interventions, outcomes vary by child, and the strength of evidence differs across specific techniques (some are well-supported, others still emerging), so goals and methods should be individualized and reviewed regularly with the treating SLP.",
+  "regions": ["United States", "Canada", "United Kingdom", "Australia"],
+  "sources": [
+    { "label": "ASHA Practice Portal - Autism", "url": "https://www.asha.org/practice-portal/clinical-topics/autism/" },
+    { "label": "ASHA - Autism (Autism Spectrum Disorder), Public Resource", "url": "https://www.asha.org/public/speech/disorders/autism/" },
+    { "label": "CDC - Treatment and Intervention for Autism Spectrum Disorder", "url": "https://www.cdc.gov/autism/treatment/index.html" }
+  ],
+  "image": "speech-language-therapy.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "stem-cell-therapy",
+  "name": "Stem Cell Therapy",
+  "category": "Biomedical & Medical",
+  "summary": "An experimental, unproven procedure marketed by some private clinics that infuses stem cells with the unsupported claim that it can improve autism symptoms.",
+  "description": "Stem cell therapy for autism involves infusing or injecting stem cells (commonly derived from umbilical cord blood or tissue) into a child, on the theory that the cells will reduce neuroinflammation or otherwise repair neural function. It is heavily marketed by private clinics, often outside the United States or through unregulated domestic providers, frequently at high out-of-pocket cost. No stem cell product is approved by the FDA for treating autism, and legitimate research in this area remains limited to small, early-stage clinical trials.",
+  "claimedBenefits": [
+    "Proponents claim reduced neuroinflammation and improved social, language, and behavioral symptoms",
+    "Marketed as a 'root cause' biological treatment rather than a symptom-management approach",
+    "Some small trials report parent-reported improvement, though without reliable controls"
+  ],
+  "evidenceNotes": "This therapy is unproven and experimental for autism. No stem cell treatment is FDA-approved for autism, and rigorous, well-controlled trials showing benefit do not exist; the few published studies are small, often lack blinding or placebo control, and are not sufficient to establish efficacy. This is not a low-stakes 'try it and see' option: the FDA has repeatedly warned that unregulated stem cell clinics expose patients to serious risks, including infections, tumor formation, and reactions to unapproved cell products, and some patients have been seriously harmed. Families considering this should be aware it is not standard of care, is not covered by insurance, and should be discussed critically with a neurologist or developmental pediatrician before pursuing any clinic's offer.",
+  "evidenceLevel": "anecdotal",
+  "regions": ["United States", "Mexico", "Panama", "China"],
+  "sources": [
+    { "label": "FDA - Consumer Alert on Regenerative Medicine Products Including Stem Cells and Exosomes", "url": "https://www.fda.gov/vaccines-blood-biologics/consumers-biologics/consumer-alert-regenerative-medicine-products-including-stem-cells-and-exosomes" },
+    { "label": "FDA - Important Patient and Consumer Information About Regenerative Medicine Therapies", "url": "https://www.fda.gov/vaccines-blood-biologics/consumers-biologics/important-patient-and-consumer-information-about-regenerative-medicine-therapies" },
+    { "label": "ASAT - Stem Cell Therapy for Autism: Is There Science Behind That?", "url": "https://asatonline.org/for-parents/becoming-a-savvy-consumer/stem-cell-therapy-is-there-science-behind-that/" }
+  ],
+  "image": "stem-cell-therapy.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

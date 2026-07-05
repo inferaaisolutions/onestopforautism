@@ -1,0 +1,23 @@
+{
+  "slug": "photobiomodulation",
+  "name": "Infrared Light / Photobiomodulation Therapy",
+  "category": "Alternative & Emerging",
+  "summary": "An investigational treatment using low-level red or near-infrared light applied to the scalp, based on early research into effects on brain metabolism and inflammation.",
+  "description": "Photobiomodulation (also called transcranial photobiomodulation, or tPBM) delivers low-level red or near-infrared light to the scalp using LED or laser devices. The proposed mechanism is that light at these wavelengths is absorbed by mitochondria in brain cells, increasing energy (ATP) production and reducing oxidative stress and inflammation, which proponents theorize could support neural function in autism. It is delivered in short sessions, typically multiple times a week over several weeks, and is being studied for several neurological conditions beyond autism, including depression and traumatic brain injury.",
+  "claimedBenefits": [
+    "Early studies report improvements in speech, responsiveness, sleep, and eye contact",
+    "Proposed reduction in tantrums and aberrant behaviors",
+    "Considered low-risk and non-invasive with no reported significant side effects in trials to date"
+  ],
+  "evidenceLevel": "emerging",
+  "evidenceNotes": "Evidence is still preliminary. A randomized, sham-controlled pilot trial in young children with autism found improvements in some autism symptom measures and brain electrophysiology after eight weeks of treatment, and open-label studies report similar results, but the overall evidence base consists of small pilot and proof-of-concept studies rather than large, independently replicated trials. No serious side effects have been reported, but photobiomodulation is not yet an established, mainstream autism treatment, and families should view current results as encouraging but early-stage.",
+  "regions": ["United States"],
+  "sources": [
+    { "label": "PMC - Transcranial Photobiomodulation in Children Aged 2-6 Years: A Randomized Sham-Controlled Clinical Trial", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11086174/" },
+    { "label": "PMC - Lights on for Autism: Exploring Photobiomodulation as an Effective Therapeutic Option", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9680350/" },
+    { "label": "ClinicalTrials.gov - Transcranial Photobiomodulation for Reducing Autism Symptoms in Children", "url": "https://clinicaltrials.gov/study/NCT04660552" }
+  ],
+  "image": "photobiomodulation.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}
