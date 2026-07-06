@@ -1,0 +1,11 @@
+{
+  "slug": "photobiomodulation-research",
+  "title": "Academic interest grows in photobiomodulation (light-based) therapy for autism",
+  "summary": "Small open-label studies and registered clinical trials are examining transcranial photobiomodulation — pulsed near-infrared light aimed at the scalp — as a potential way to modulate brain activity in autistic children. Early results report changes in EEG patterns and behavior scores, but researchers caution that studies remain small, mostly uncontrolled, and years away from informing clinical guidelines.",
+  "date": "2026-03-05",
+  "sources": [
+    { "label": "Frontiers in Child and Adolescent Psychiatry - transcranial photobiomodulation open-label study", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11814471/" },
+    { "label": "ClinicalTrials.gov - Autism Research Project With Non-Invasive Near-Infrared Light Stimulation", "url": "https://clinicaltrials.gov/study/NCT06203938" }
+  ],
+  "sourceType": "seed"
+}

@@ -1,0 +1,11 @@
+{
+  "slug": "autism-research-funding-update",
+  "title": "NIH funding landscape for autism research continues to shift",
+  "summary": "In late 2025 the NIH launched a $50 million Autism Data Science Initiative funding over a dozen projects studying how genetics and environmental exposures interact in autism, following earlier funding cuts affecting autism research across several federal agencies. Advocacy groups continue to track how funding aligns with the priority areas set out in the Autism CARES Act, with most current grants still directed toward basic biology and genetics research.",
+  "date": "2026-01-15",
+  "sources": [
+    { "label": "NIH DPCPSI - Autism Data Science Initiative: Funded Research", "url": "https://dpcpsi.nih.gov/autism-data-science-initiative/funded-research" },
+    { "label": "Disability Scoop - NIH Moves Forward With Major Autism Research Initiative", "url": "https://www.disabilityscoop.com/2025/10/20/nih-moves-forward-with-major-autism-research-initiative/31688/" }
+  ],
+  "sourceType": "seed"
+}

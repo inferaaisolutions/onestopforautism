@@ -1,0 +1,11 @@
+{
+  "slug": "early-screening-tools",
+  "title": "Development continues on earlier and more accessible autism screening tools",
+  "summary": "Researchers and clinicians continue refining tools meant to flag autism traits earlier, including mobile health apps and AI-assisted approaches such as eye-tracking and video-based classifiers. A recent consensus effort focused on the usability and acceptability of mobile screening tools, while implementation research continues to highlight gaps in provider training and consistent follow-up after a positive screen.",
+  "date": "2026-04-12",
+  "sources": [
+    { "label": "PMC - Consensus recommendations for usability and acceptability of mobile health autism screening tools", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12411648/" },
+    { "label": "Autism.org.uk - Criteria and tools used in an autism assessment", "url": "https://www.autism.org.uk/advice-and-guidance/diagnosis/assessment-and-diagnosis/criteria-and-tools-used-in-an-autism-assessment" }
+  ],
+  "sourceType": "seed"
+}
