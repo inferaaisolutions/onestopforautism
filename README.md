@@ -25,6 +25,13 @@ All content lives as JSON files under `content/` (`therapies/`, `behaviors/`,
 `news/`, `resources/`), validated against schemas in `src/lib/schema.ts`.
 Images live under `public/images/`, credited in `content/credits.json`.
 
+## Phase 2 scraper
+
+`npm run scrape` fetches new content and writes it into `content/`, tagged
+`sourceType: "scraped"`. Reddit sourcing requires a registered Reddit app:
+copy `.env.example` to `.env.local` and fill in `REDDIT_CLIENT_ID` /
+`REDDIT_CLIENT_SECRET`. Without them, Reddit sourcing is skipped gracefully.
+
 ## Disclaimer
 
 This is an independent aggregation platform. Content is sourced from public
