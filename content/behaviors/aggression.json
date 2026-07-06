@@ -1,0 +1,37 @@
+{
+  "slug": "aggression",
+  "name": "Aggression",
+  "summary": "Hitting, kicking, biting, throwing objects, or other outward aggressive acts, most often arising from frustration, communication breakdown, or sensory/emotional overwhelm rather than intent to harm.",
+  "triggers": [
+    "Inability to communicate a need or discomfort verbally",
+    "Sensory overload or physical discomfort/pain",
+    "Disruption to routine or a forced, abrupt transition",
+    "Being denied a wanted item or activity",
+    "Fatigue, hunger, or illness lowering frustration tolerance"
+  ],
+  "remedies": [
+    {
+      "text": "Functional behavior assessment (FBA) with a qualified clinician to identify what the aggression is communicating before choosing a strategy",
+      "evidenceLevel": "clinical"
+    },
+    {
+      "text": "Functional communication training — teaching words, signs, or a communication device to request breaks, help, or wanted items instead of using aggression",
+      "evidenceLevel": "clinical"
+    },
+    {
+      "text": "Reduce known triggers proactively (advance warning of transitions, quiet space available) rather than only reacting after aggression occurs",
+      "evidenceLevel": "emerging"
+    },
+    {
+      "text": "Regular physical activity to support emotional regulation and reduce baseline stress",
+      "evidenceLevel": "anecdotal"
+    }
+  ],
+  "sources": [
+    { "label": "Autism Research Institute - Strategies for Addressing Challenging Behaviors", "url": "https://autism.org/strategies-for-addressing-challenging-behaviors/" },
+    { "label": "Autism Speaks - Challenging Behaviors Tool Kit", "url": "https://www.autismspeaks.org/tool-kit/challenging-behaviors-tool-kit" }
+  ],
+  "image": "aggression.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

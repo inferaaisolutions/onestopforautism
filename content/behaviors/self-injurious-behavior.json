@@ -1,0 +1,37 @@
+{
+  "slug": "self-injurious-behavior",
+  "name": "Self-Injurious Behavior",
+  "summary": "Actions that cause harm to oneself — head-banging, hand-biting, excessive scratching — which can stem from communication difficulty, sensory needs, pain, or emotional overwhelm and warrants prompt professional assessment.",
+  "triggers": [
+    "Inability to communicate pain, discomfort, or an unmet need",
+    "Escape or avoidance of an overwhelming task or environment",
+    "Sensory-seeking (craving intense proprioceptive or tactile input)",
+    "Underlying pain or medical issue (e.g. headache, GI discomfort, ear infection)",
+    "Extreme frustration or emotional distress with no other outlet"
+  ],
+  "remedies": [
+    {
+      "text": "Rule out pain or a medical cause first — self-injury can be the only way a nonverbal or minimally verbal child signals physical distress",
+      "evidenceLevel": "clinical"
+    },
+    {
+      "text": "Functional behavior assessment with a BCBA or psychologist to determine the behavior's function before intervening",
+      "evidenceLevel": "clinical"
+    },
+    {
+      "text": "Teach and reinforce an alternative way to get the same need met (communication device, requesting a break, requesting sensory input safely)",
+      "evidenceLevel": "clinical"
+    },
+    {
+      "text": "Protective equipment (padded mitts, helmets) as a short-term safety measure while the underlying cause is addressed, not as a standalone fix",
+      "evidenceLevel": "anecdotal"
+    }
+  ],
+  "sources": [
+    { "label": "Autism Research Institute - Self-Injurious Behavior Q&A", "url": "https://autism.org/self-injurious-behavior-qa/" },
+    { "label": "Autism Research Institute - Causes and Interventions for Self-Injury in Autism", "url": "https://autism.org/causes-and-interventions-for-self-injury-in-autism/" }
+  ],
+  "image": "self-injurious-behavior.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "restricted-interests",
+  "name": "Restricted Interests",
+  "summary": "An intense, narrowly focused interest in a specific topic, object, or activity — extremely common in autistic people and often a genuine source of joy, comfort, and skill-building rather than something to be discouraged.",
+  "triggers": [
+    "Not a 'trigger' in the problem sense — interests are typically self-chosen and intrinsically motivating",
+    "Stress or unfamiliar situations, where retreating to the interest offers comfort and predictability",
+    "Boredom or understimulation prompting a return to the familiar topic",
+    "Social or environmental cues that remind the person of the interest"
+  ],
+  "remedies": [
+    {
+      "text": "Use the interest as a bridge to connection and learning — join in, ask questions, and use it to teach related skills rather than shutting it down",
+      "evidenceLevel": "emerging"
+    },
+    {
+      "text": "Set gentle, agreed-upon limits on timing (e.g. after homework, not during meals) rather than banning the interest outright",
+      "evidenceLevel": "anecdotal"
+    },
+    {
+      "text": "Help find peer groups or clubs centered on the same interest to build social connection around it",
+      "evidenceLevel": "anecdotal"
+    },
+    {
+      "text": "Social skills or flexibility coaching to help broaden conversation topics when needed for social situations, without requiring the interest itself to shrink",
+      "evidenceLevel": "emerging"
+    }
+  ],
+  "sources": [
+    { "label": "Kennedy Krieger Institute (IAN) - Restricted Interests: Obsessions, 'Special Topics,' and Attention Deficits", "url": "https://www.kennedykrieger.org/stories/interactive-autism-network-ian/challenging_behavior_restricted_interests" },
+    { "label": "PMC - Interests in high-functioning autism are more intense, interfering, and idiosyncratic, but not more circumscribed, than those in neurotypical development", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4543385/" }
+  ],
+  "image": "restricted-interests.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "sensory-overload",
+  "name": "Sensory Overload",
+  "summary": "A state of being flooded by more sensory input (sound, light, touch, smell, crowding) than the brain can process at once, which can produce distress, shutdown, or meltdown.",
+  "triggers": [
+    "Loud, layered, or sudden noises (alarms, crowds, machinery)",
+    "Bright, flickering, or fluorescent lighting",
+    "Crowded or visually busy environments",
+    "Uncomfortable textures, clothing tags, or unexpected touch",
+    "Strong or unfamiliar smells"
+  ],
+  "remedies": [
+    {
+      "text": "Reduce sensory input immediately — dim lights, lower noise, move to a quieter space — rather than pushing through the environment",
+      "evidenceLevel": "emerging"
+    },
+    {
+      "text": "Noise-canceling headphones or earplugs in known loud environments",
+      "evidenceLevel": "anecdotal"
+    },
+    {
+      "text": "Occupational therapy sensory integration approaches to build tolerance and coping strategies over time",
+      "evidenceLevel": "clinical"
+    },
+    {
+      "text": "Give advance notice about sensory-heavy events (fireworks, assemblies, crowded stores) so the person can prepare or opt out",
+      "evidenceLevel": "anecdotal"
+    }
+  ],
+  "sources": [
+    { "label": "Understood.org - Are there therapies or treatments for kids with sensory processing challenges?", "url": "https://www.understood.org/en/articles/sensory-processing-disorder-therapies-and-treatments" },
+    { "label": "Autism Research Institute - Sensory Processing Resources", "url": "https://autism.org/sensory-processing-resources/" }
+  ],
+  "image": "sensory-overload.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

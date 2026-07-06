@@ -1,0 +1,37 @@
+{
+  "slug": "echolalia",
+  "name": "Echolalia",
+  "summary": "Repeating words or phrases heard from someone else — either immediately or after a delay — which is common in autistic communication and often serves a real communicative or self-regulatory function rather than being meaningless repetition.",
+  "triggers": [
+    "Being asked a question that is hard to answer spontaneously",
+    "Anxiety or stress, where repeating familiar phrases is soothing",
+    "Processing language that is still being learned (a step toward spontaneous speech)",
+    "Enjoyment of the sound, rhythm, or memory associated with a phrase",
+    "A gap in expressive language for the situation at hand"
+  ],
+  "remedies": [
+    {
+      "text": "Treat echolalia as communication and try to interpret its likely function (request, protest, self-soothing) rather than only trying to suppress it",
+      "evidenceLevel": "emerging"
+    },
+    {
+      "text": "Speech-language therapy individualized to the person, since echolalia responds best to programs tailored to the specific communicative function it serves",
+      "evidenceLevel": "clinical"
+    },
+    {
+      "text": "Model the target phrase in response rather than correcting — e.g. answering an echoed question with the expected reply, giving a pattern to imitate",
+      "evidenceLevel": "anecdotal"
+    },
+    {
+      "text": "Visual supports (picture cards, written scripts) to help build alternative ways to express the same need",
+      "evidenceLevel": "emerging"
+    }
+  ],
+  "sources": [
+    { "label": "PMC - Functional echolalia in autism speech: Verbal formulae and repeated prior utterances as communicative and cognitive strategies", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9997079/" },
+    { "label": "NCBI Bookshelf (StatPearls) - Echolalia", "url": "https://www.ncbi.nlm.nih.gov/books/NBK565908/" }
+  ],
+  "image": "echolalia.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

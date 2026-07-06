@@ -1,0 +1,37 @@
+{
+  "slug": "social-withdrawal",
+  "name": "Social Withdrawal",
+  "summary": "Pulling away from social interaction or group settings — which may reflect a genuine preference for solitude, or exhaustion and anxiety from social/sensory demands, and doesn't necessarily mean a lack of desire for connection.",
+  "triggers": [
+    "Difficulty reading social cues (body language, tone, facial expression), making interaction exhausting",
+    "Sensory overload in group or noisy social settings",
+    "Past negative social experiences (bullying, rejection, misunderstanding)",
+    "Preference for predictable, low-demand activities over unstructured socializing",
+    "General anxiety or low energy for the effort socializing requires ('social masking' fatigue)"
+  ],
+  "remedies": [
+    {
+      "text": "Structured, low-pressure social opportunities (one-on-one playdates, shared-interest clubs) rather than large unstructured groups",
+      "evidenceLevel": "emerging"
+    },
+    {
+      "text": "Social skills training or a program like Children's Friendship Training that explicitly teaches and practices specific social skills",
+      "evidenceLevel": "clinical"
+    },
+    {
+      "text": "Ask directly and gently whether the person wants more social contact — some withdrawal is a genuine, healthy preference, not a problem to fix",
+      "evidenceLevel": "anecdotal"
+    },
+    {
+      "text": "Connect with peer or online communities built around a shared interest, which can feel safer than open-ended socializing",
+      "evidenceLevel": "anecdotal"
+    }
+  ],
+  "sources": [
+    { "label": "Kennedy Krieger Institute (IAN) - Social Skills Interventions: Getting to the Core of Autism", "url": "https://www.kennedykrieger.org/stories/interactive-autism-network-ian/social_skills_interventions" },
+    { "label": "r/autism community discussion", "url": "https://www.reddit.com/r/autism/" }
+  ],
+  "image": "social-withdrawal.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

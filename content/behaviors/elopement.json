@@ -1,0 +1,37 @@
+{
+  "slug": "elopement",
+  "name": "Elopement (Wandering)",
+  "summary": "Leaving a safe, supervised space without warning — running off, bolting from a caregiver, or slipping away from home — a common and potentially dangerous behavior in autistic children.",
+  "triggers": [
+    "Escaping sensory overload (noise, crowds, bright light)",
+    "Drawn toward a strong interest (water, traffic, a specific object or place)",
+    "Escaping an unwanted demand, task, or transition",
+    "Boredom or lack of engagement in the current setting",
+    "Unsecured exits (unlocked doors, open gates) removing a physical barrier"
+  ],
+  "remedies": [
+    {
+      "text": "Secure the home: door/window alarms, high-mounted locks, fencing, and locks the child cannot easily open",
+      "evidenceLevel": "emerging"
+    },
+    {
+      "text": "ID jewelry, a GPS tracker, or a wearable tag with contact information in case of wandering",
+      "evidenceLevel": "anecdotal"
+    },
+    {
+      "text": "Swim lessons adapted for autistic children, since drowning is a leading cause of wandering-related death — this reduces risk but does not make water safe unsupervised",
+      "evidenceLevel": "anecdotal"
+    },
+    {
+      "text": "Functional behavior assessment with a BCBA to identify what the elopement is seeking or avoiding, paired with teaching a safer way to communicate that need",
+      "evidenceLevel": "clinical"
+    }
+  ],
+  "sources": [
+    { "label": "Autism Speaks - Wandering Prevention", "url": "https://www.autismspeaks.org/wandering-prevention" },
+    { "label": "National Autism Association - Wandering", "url": "https://nationalautismassociation.org/resources/wandering/" }
+  ],
+  "image": "elopement.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

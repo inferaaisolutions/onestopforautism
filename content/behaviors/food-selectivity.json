@@ -1,0 +1,37 @@
+{
+  "slug": "food-selectivity",
+  "name": "Food Selectivity",
+  "summary": "A pattern of eating a narrow range of foods and refusing many others, often driven by sensory sensitivities (texture, smell, appearance) rather than simple pickiness, and common enough that it often persists into adulthood without support.",
+  "triggers": [
+    "Texture sensitivities (mushy, mixed, or unfamiliar textures)",
+    "Foods touching each other on the plate",
+    "Strong smells, tastes, or unfamiliar appearance of a food",
+    "Anxiety about trying anything new (food neophobia)",
+    "Past negative experience with a food (gagging, choking, illness)"
+  ],
+  "remedies": [
+    {
+      "text": "Feeding therapy with an SLP or OT trained in pediatric feeding, using gradual, low-pressure exposure rather than forcing bites",
+      "evidenceLevel": "clinical"
+    },
+    {
+      "text": "Keep offering new foods alongside safe, accepted foods without requiring the child to eat them, to build familiarity over time",
+      "evidenceLevel": "emerging"
+    },
+    {
+      "text": "Let the child control small aspects of mealtime (plate, utensils, how foods are arranged) to reduce anxiety around eating",
+      "evidenceLevel": "anecdotal"
+    },
+    {
+      "text": "Track accepted foods and consult a pediatrician or dietitian about supplementing nutrients if the diet is very restricted",
+      "evidenceLevel": "clinical"
+    }
+  ],
+  "sources": [
+    { "label": "PMC - Patterns of Food Selectivity among Children with Autism Spectrum Disorder", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10488249/" },
+    { "label": "r/Autism_Parenting community discussion", "url": "https://www.reddit.com/r/Autism_Parenting/" }
+  ],
+  "image": "food-selectivity.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

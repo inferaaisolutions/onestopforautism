@@ -1,0 +1,37 @@
+{
+  "slug": "transition-difficulty",
+  "name": "Transition Difficulty",
+  "summary": "Distress or resistance when moving from one activity, place, or routine to another — driven by a need for predictability and difficulty anticipating what comes next, not simple stubbornness.",
+  "triggers": [
+    "Unexpected or abrupt changes with no warning",
+    "Not knowing what will happen next or how long it will last",
+    "Being interrupted mid-activity, especially a preferred one",
+    "Multiple transitions packed close together with little recovery time",
+    "Sensory or environmental differences between the two settings"
+  ],
+  "remedies": [
+    {
+      "text": "Visual schedules showing the sequence of activities so the person can see what's coming and mentally prepare",
+      "evidenceLevel": "emerging"
+    },
+    {
+      "text": "Advance verbal or visual warnings before a transition ('5 more minutes, then we clean up') rather than a sudden stop",
+      "evidenceLevel": "emerging"
+    },
+    {
+      "text": "Social stories that walk through a specific upcoming change in simple, concrete language",
+      "evidenceLevel": "emerging"
+    },
+    {
+      "text": "A consistent transition object, song, or ritual that signals 'it's time to switch' across settings",
+      "evidenceLevel": "anecdotal"
+    }
+  ],
+  "sources": [
+    { "label": "Indiana Resource Center for Autism - Transition Time: Helping Individuals on the Autism Spectrum Move Successfully from One Activity to Another", "url": "https://iidc.indiana.edu/irca/articles/transition-time-helping-individuals-on-the-autism-spectrum-move-successfully-from-one-activity-to-another.html" },
+    { "label": "Autism Speaks - Visual Supports and Autism Spectrum Disorder", "url": "https://www.autismspeaks.org/tool-kit/autism-care-networkair-p-visual-supports-and-autism" }
+  ],
+  "image": "transition-difficulty.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}

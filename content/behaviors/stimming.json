@@ -1,0 +1,37 @@
+{
+  "slug": "stimming",
+  "name": "Stimming",
+  "summary": "Repetitive movements, sounds, or actions (hand-flapping, rocking, humming, lining up objects) that many autistic people use to regulate emotion and sensory input — not inherently a problem to be eliminated.",
+  "triggers": [
+    "Excitement, joy, or anticipation",
+    "Anxiety, stress, or sensory overload",
+    "Boredom or understimulating environments",
+    "Need to self-soothe or process emotions",
+    "Sensory-seeking (craving certain movement, sound, or touch input)"
+  ],
+  "remedies": [
+    {
+      "text": "Let low-risk stimming happen rather than suppressing it — most stimming is not harmful and serves a real regulatory purpose",
+      "evidenceLevel": "emerging"
+    },
+    {
+      "text": "Offer an alternative, safer stim (e.g. a fidget tool, chewable jewelry) if the current stim risks injury or property damage, rather than trying to stop stimming outright",
+      "evidenceLevel": "anecdotal"
+    },
+    {
+      "text": "Identify and reduce the underlying trigger (sensory overload, anxiety) since stimming often increases in response to a specific stressor",
+      "evidenceLevel": "emerging"
+    },
+    {
+      "text": "Occupational therapy (sensory integration approaches) to help build a broader toolkit for regulation",
+      "evidenceLevel": "clinical"
+    }
+  ],
+  "sources": [
+    { "label": "Baylor College of Medicine - Autism: Self-Stimulating Behaviors ('Stimming') as Coping", "url": "https://www.bcm.edu/research/faculty-labs/luna-learning-to-understand-and-navigate-anxiety/caregiver-modules/module-6-learning-coping-skills-to-manage-anxiety/supplemental-information-for-autism-self-stimulating-behaviors-or-stimming-as-coping" },
+    { "label": "PMC - 'People should be allowed to do what they like': Autistic adults' views and experiences of stimming", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6728747/" }
+  ],
+  "image": "stimming.jpg",
+  "sourceType": "seed",
+  "updatedAt": "2026-07-05"
+}
