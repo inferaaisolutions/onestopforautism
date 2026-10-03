@@ -37,5 +37,8 @@ it("appends to the same log file if called twice in one day", () => {
   logger2.logAdded("news/b.json");
   logger2.save();
 
-  expect(fs.readdirSync(TEST_LOGS_DIR)).toHaveLength(1);
+  const files = fs.readdirSync(TEST_LOGS_DIR);
+  expect(files).toHaveLength(1);
+  const log = JSON.parse(fs.readFileSync(path.join(TEST_LOGS_DIR, files[0]), "utf-8"));
+  expect(log.added).toEqual(["news/a.json", "news/b.json"]);
 });

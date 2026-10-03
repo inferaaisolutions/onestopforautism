@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-interface LogEntry {
+export interface LogEntry {
   date: string;
   added: string[];
   updated: string[];
@@ -19,12 +19,20 @@ interface Logger {
 }
 
 export function createLogger(logsDir = path.join(process.cwd(), "logs")): Logger {
-  const today = new Date().toISOString().split("T")[0];
+  const now = new Date();
+  const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
   const logPath = path.join(logsDir, `ai-update-${today}.json`);
 
-  const entry: LogEntry = fs.existsSync(logPath)
-    ? JSON.parse(fs.readFileSync(logPath, "utf-8"))
-    : { date: today, added: [], updated: [], skipped: 0, failed: 0, failureReasons: [] };
+  let entry: LogEntry;
+  if (fs.existsSync(logPath)) {
+    try {
+      entry = JSON.parse(fs.readFileSync(logPath, "utf-8")) as LogEntry;
+    } catch {
+      entry = { date: today, added: [], updated: [], skipped: 0, failed: 0, failureReasons: [] };
+    }
+  } else {
+    entry = { date: today, added: [], updated: [], skipped: 0, failed: 0, failureReasons: [] };
+  }
 
   return {
     logAdded(file) { entry.added.push(file); },
