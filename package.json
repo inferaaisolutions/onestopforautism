@@ -11,7 +11,8 @@
     "test:watch": "vitest",
     "scrape": "tsx scripts/scrape.ts",
     "ai-update": "tsx scripts/ai-update.ts",
-    "setup-scheduler": "tsx scripts/setup-scheduler.ts"
+    "setup-scheduler": "tsx scripts/setup-scheduler.ts",
+    "webcman": "tsx webcman/src/run.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.131.0",
