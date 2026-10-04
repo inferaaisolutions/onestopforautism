@@ -4,7 +4,7 @@ import Groq from "groq-sdk";
 import type { DiscoveredSource } from "./types";
 
 const CACHE_TTL_DAYS = 30;
-const MODEL = "llama-3.3-70b-versatile";
+const MODEL = "llama3-70b-8192";
 
 const DISCOVERY_PROMPT = (topic: string) => `You are a web researcher.
 List the best publicly available RSS feeds and PubMed search URLs for the topic: "${topic}".
