@@ -9,6 +9,7 @@ import { inferSiteSchema } from "./schema-inferrer";
 import { runUpdateEngine } from "./update-engine";
 import { createRunLogger } from "./run-logger";
 import { generateDashboard } from "./dashboard";
+import { sendNewsletter } from "./newsletter";
 
 const WEBCMAN_DIR = path.join(process.cwd(), ".webcman");
 const CONFIG_PATH = path.join(process.cwd(), "webcman.config.json");
@@ -62,6 +63,22 @@ async function main(): Promise<void> {
   logger.save();
 
   console.log(`[WebCMan] Done. +${stats.added.length} added, ~${stats.updated.length} updated, ${stats.flagged.length} flagged, ${stats.blocked.length} blocked, ${stats.failed.length} failed.`);
+
+  // Send newsletter if new articles were added
+  const resendKey = process.env.RESEND_API_KEY ?? "";
+  const audienceId = process.env.RESEND_AUDIENCE_ID ?? "";
+  const fromEmail = process.env.RESEND_FROM_EMAIL ?? "";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "";
+
+  if (stats.added.length > 0 && resendKey && audienceId && fromEmail && siteUrl) {
+    console.log("[WebCMan] Sending newsletter...");
+    try {
+      await sendNewsletter(stats.added, config.contentDir, resendKey, audienceId, fromEmail, siteUrl);
+      console.log(`[WebCMan] Newsletter sent to subscribers.`);
+    } catch (err) {
+      console.error("[WebCMan] Newsletter send failed:", String(err));
+    }
+  }
 
   // Generate dashboard
   const logsDir = path.join(WEBCMAN_DIR, "logs");
