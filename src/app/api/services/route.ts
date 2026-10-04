@@ -1,13 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
 const ZIP_REGEX = /^\d{5}$/;
-const RADIUS_METERS = 40000; // ~25 miles
-
-const ASD_KEYWORDS = [
-  "autism", "aba", "behavioral", "behaviour", "speech",
-  "occupational", "therapy", "therapist", "developmental",
-  "special needs", "pediatric",
-];
+const NOMINATIM_UA = "ASD-Guide/1.0";
 
 interface ZippopotamResponse {
   "post code": string;
@@ -20,13 +14,14 @@ interface ZippopotamResponse {
   }>;
 }
 
-interface OverpassElement {
+interface NominatimResult {
+  place_id: number;
+  lat: string;
+  lon: string;
+  name: string;
+  display_name: string;
   type: string;
-  id: number;
-  lat?: number;
-  lon?: number;
-  center?: { lat: number; lon: number };
-  tags: Record<string, string>;
+  class: string;
 }
 
 export interface ServiceResult {
@@ -40,7 +35,7 @@ export interface ServiceResult {
 }
 
 function haversineDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
-  const R = 3958.8; // miles
+  const R = 3958.8;
   const dLat = ((lat2 - lat1) * Math.PI) / 180;
   const dLon = ((lon2 - lon1) * Math.PI) / 180;
   const a =
@@ -51,27 +46,25 @@ function haversineDistance(lat1: number, lon1: number, lat2: number, lon2: numbe
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
-function isAsdRelevant(tags: Record<string, string>): boolean {
-  const text = Object.values(tags).join(" ").toLowerCase();
-  return ASD_KEYWORDS.some((kw) => text.includes(kw));
+function formatType(type: string): string {
+  return type
+    .replace(/_/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
-function getServiceType(tags: Record<string, string>): string {
-  if (tags["healthcare:speciality"]) return tags["healthcare:speciality"];
-  if (tags["amenity"] === "clinic") return "Clinic";
-  if (tags["amenity"] === "doctors") return "Doctor";
-  if (tags["healthcare"]) return tags["healthcare"];
-  return "Healthcare";
+function shortAddress(display_name: string): string {
+  // display_name is "Name, house, street, suburb, city, state, zip, country"
+  // Strip the first part (name) and last part (country), return rest trimmed
+  const parts = display_name.split(", ");
+  if (parts.length > 3) return parts.slice(1, -1).join(", ");
+  return display_name;
 }
 
-function buildAddress(tags: Record<string, string>): string {
-  const parts = [
-    tags["addr:housenumber"],
-    tags["addr:street"],
-    tags["addr:city"],
-    tags["addr:state"],
-  ].filter(Boolean);
-  return parts.length > 0 ? parts.join(", ") : "Address not available";
+async function nominatimSearch(q: string): Promise<NominatimResult[]> {
+  const url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(q)}&format=json&limit=15&countrycodes=us&addressdetails=0`;
+  const res = await fetch(url, { headers: { "User-Agent": NOMINATIM_UA } });
+  if (!res.ok) return [];
+  return res.json();
 }
 
 export async function GET(req: NextRequest) {
@@ -89,50 +82,41 @@ export async function GET(req: NextRequest) {
   const place = geoData.places[0];
   const lat = parseFloat(place.latitude);
   const lon = parseFloat(place.longitude);
+  const cityState = `${place["place name"]} ${place.state}`;
 
-  const query = `[out:json][timeout:25];(node["healthcare"](around:${RADIUS_METERS},${lat},${lon});node["amenity"="clinic"](around:${RADIUS_METERS},${lat},${lon});node["amenity"="doctors"](around:${RADIUS_METERS},${lat},${lon});way["healthcare"](around:${RADIUS_METERS},${lat},${lon});way["amenity"="clinic"](around:${RADIUS_METERS},${lat},${lon}););out body;>;out skel qt;`;
+  const city = place["place name"];
 
-  const overpassRes = await fetch("https://overpass-api.de/api/interpreter", {
-    method: "POST",
-    body: query,
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  });
+  // Three parallel searches using simple queries Nominatim handles well
+  const [r1, r2, r3] = await Promise.all([
+    nominatimSearch(`speech therapy ${city}`),
+    nominatimSearch(`occupational therapy ${city}`),
+    nominatimSearch(`behavioral health ${city}`),
+  ]);
 
-  if (!overpassRes.ok) {
-    return NextResponse.json({ error: "Service lookup failed" }, { status: 502 });
+  // Merge, deduplicate by place_id
+  const seen = new Set<number>();
+  const merged: NominatimResult[] = [];
+  for (const r of [...r1, ...r2, ...r3]) {
+    if (!seen.has(r.place_id) && r.name) {
+      seen.add(r.place_id);
+      merged.push(r);
+    }
   }
 
-  const overpassData: { elements: OverpassElement[] } = await overpassRes.json();
-
-  type Parsed = ServiceResult & { _isAsd: boolean };
-
-  const parsed: Parsed[] = overpassData.elements
-    .filter(
-      (el) =>
-        el.tags?.name &&
-        (el.lat !== undefined || el.center?.lat !== undefined)
-    )
-    .map((el) => {
-      const elLat = el.lat ?? el.center!.lat;
-      const elLon = el.lon ?? el.center!.lon;
-      return {
-        id: el.id,
-        name: el.tags.name,
-        address: buildAddress(el.tags),
-        type: getServiceType(el.tags),
-        distance: parseFloat(
-          haversineDistance(lat, lon, elLat, elLon).toFixed(1)
-        ),
-        lat: elLat,
-        lon: elLon,
-        _isAsd: isAsdRelevant(el.tags),
-      };
-    })
-    .sort((a, b) => a.distance - b.distance);
-
-  const asdFiltered = parsed.filter((r) => r._isAsd);
-  const raw = asdFiltered.length >= 3 ? asdFiltered : parsed.slice(0, 20);
-  const results: ServiceResult[] = raw.map(({ _isAsd: _a, ...r }) => r);
+  const results: ServiceResult[] = merged
+    .map((r) => ({
+      id: r.place_id,
+      name: r.name,
+      address: shortAddress(r.display_name),
+      type: formatType(r.type || r.class),
+      distance: parseFloat(
+        haversineDistance(lat, lon, parseFloat(r.lat), parseFloat(r.lon)).toFixed(1)
+      ),
+      lat: parseFloat(r.lat),
+      lon: parseFloat(r.lon),
+    }))
+    .sort((a, b) => a.distance - b.distance)
+    .slice(0, 20);
 
   return NextResponse.json({
     zip,

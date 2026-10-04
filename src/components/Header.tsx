@@ -1,7 +1,10 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
+import AuthButtons from "@/components/AuthButtons";
+
+const clerkConfigured =
+  (process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY ?? "").startsWith("pk_");
 
 const NAV_ITEMS = [
   { href: "/", label: "Home" },
@@ -37,18 +40,7 @@ export default function Header() {
             </li>
           ))}
         </ul>
-        <div className="flex items-center gap-2">
-          <SignedOut>
-            <SignInButton mode="modal">
-              <button className="rounded-lg bg-teal-600 px-4 py-1.5 text-sm font-semibold text-white hover:bg-teal-700">
-                Sign In
-              </button>
-            </SignInButton>
-          </SignedOut>
-          <SignedIn>
-            <UserButton />
-          </SignedIn>
-        </div>
+        {clerkConfigured && <AuthButtons />}
       </nav>
     </header>
   );
