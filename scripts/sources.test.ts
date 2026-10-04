@@ -19,15 +19,22 @@ it("TRUSTED_SOURCES has 7 entries, all with name and url", () => {
   }
 });
 
-it("fetchAllSources returns an array of RawArticles", async () => {
+it("fetchAllSources returns RawArticles with expected shape", async () => {
   vi.stubGlobal("fetch", vi.fn().mockResolvedValue({
     ok: true,
     text: async () => RSS_XML,
-    json: async () => ({ esearchresult: { idlist: [] } }),
+    json: async () => ({ esearchresult: { idlist: [] }, data: { children: [] } }),
   }));
 
   const articles = await fetchAllSources({ redditClientId: "", redditClientSecret: "" });
   expect(Array.isArray(articles)).toBe(true);
+  for (const a of articles) {
+    expect(typeof a.title).toBe("string");
+    expect(typeof a.url).toBe("string");
+    expect(typeof a.source).toBe("string");
+    expect(typeof a.content).toBe("string");
+    expect(typeof a.date).toBe("string");
+  }
 
   vi.unstubAllGlobals();
 });
