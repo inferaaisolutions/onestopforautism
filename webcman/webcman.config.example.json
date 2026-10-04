@@ -1,0 +1,28 @@
+{
+  "topic": "describe your site topic in plain English",
+  "contentDir": "./content",
+  "schedule": "0 10 * * *",
+  "trustTiers": {
+    "tier1": ["pubmed.ncbi.nlm.nih.gov", "cochranelibrary.com", "who.int"],
+    "tier2": ["nih.gov", "cdc.gov"],
+    "tier3": ["sciencedaily.com"],
+    "tier4": ["reddit.com"]
+  },
+  "blockedPhrases": [
+    "consult your doctor",
+    "consult a physician",
+    "medical advice",
+    "seek medical attention",
+    "talk to your doctor",
+    "see a doctor",
+    "clinical recommendation"
+  ],
+  "rollbackDepth": 5,
+  "sources": [
+    {
+      "feedUrl": "https://example.com/rss.xml",
+      "domain": "example.com",
+      "type": "rss"
+    }
+  ]
+}
