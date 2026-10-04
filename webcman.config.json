@@ -1,0 +1,41 @@
+{
+  "topic": "autism spectrum disorder therapies, behaviors, and research",
+  "contentDir": "./content",
+  "schedule": "0 10 * * *",
+  "trustTiers": {
+    "tier1": [
+      "pubmed.ncbi.nlm.nih.gov",
+      "cochranelibrary.com",
+      "who.int"
+    ],
+    "tier2": [
+      "nih.gov",
+      "autismspeaks.org",
+      "cdc.gov",
+      "nichd.nih.gov",
+      "aap.org"
+    ],
+    "tier3": [
+      "sciencedaily.com",
+      "thetransmitter.org",
+      "spectrumnews.org",
+      "medicalnewstoday.com"
+    ],
+    "tier4": [
+      "reddit.com"
+    ]
+  },
+  "blockedPhrases": [
+    "consult your doctor",
+    "consult a physician",
+    "medical advice",
+    "seek medical attention",
+    "talk to your doctor",
+    "see a doctor",
+    "clinical recommendation",
+    "diagnose",
+    "prescription",
+    "you should take"
+  ],
+  "rollbackDepth": 5
+}
