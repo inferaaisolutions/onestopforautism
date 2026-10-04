@@ -9,7 +9,9 @@
     "lint": "next lint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "scrape": "tsx scripts/scrape.ts"
+    "scrape": "tsx scripts/scrape.ts",
+    "ai-update": "tsx scripts/ai-update.ts",
+    "setup-scheduler": "tsx scripts/setup-scheduler.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.131.0",
