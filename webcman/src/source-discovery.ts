@@ -4,7 +4,7 @@ import Groq from "groq-sdk";
 import type { DiscoveredSource } from "./types";
 
 const CACHE_TTL_DAYS = 30;
-const MODEL = "openai/gpt-oss-20b";
+const MODEL = "qwen/qwen3.8-27b";
 
 const DISCOVERY_PROMPT = (topic: string) => `You are a web researcher.
 List the best publicly available RSS feeds and PubMed search URLs for the topic: "${topic}".

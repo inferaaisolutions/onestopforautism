@@ -38,7 +38,9 @@ export async function runUpdateEngine(opts: EngineOptions): Promise<RunStats> {
   const stats: RunStats = { added: [], updated: [], flagged: [], blocked: [], failed: [] };
   const { config, apiKey, webcmanDir, contentTypes, siteSchema } = opts;
 
-  const sources = await discoverSources(config.topic, apiKey, webcmanDir);
+  const sources = config.sources?.length
+    ? config.sources
+    : await discoverSources(config.topic, apiKey, webcmanDir);
 
   for (const contentType of contentTypes) {
     const schema = siteSchema[contentType];

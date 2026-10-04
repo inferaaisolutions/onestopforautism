@@ -37,5 +37,10 @@
     "prescription",
     "you should take"
   ],
-  "rollbackDepth": 5
+  "rollbackDepth": 5,
+  "sources": [
+    { "feedUrl": "https://www.sciencedaily.com/rss/mind_brain/autism.xml", "domain": "sciencedaily.com", "type": "rss" },
+    { "feedUrl": "https://www.thetransmitter.org/spectrum/feed/", "domain": "thetransmitter.org", "type": "rss" },
+    { "feedUrl": "https://www.who.int/rss-feeds/news-english.xml", "domain": "who.int", "type": "rss" }
+  ]
 }

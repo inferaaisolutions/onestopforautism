@@ -10,6 +10,7 @@ export interface WebCManConfig {
   };
   blockedPhrases: string[];
   rollbackDepth: number;
+  sources?: DiscoveredSource[];
 }
 
 export interface FieldInfo {

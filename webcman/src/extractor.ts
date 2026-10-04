@@ -1,7 +1,7 @@
 import Groq from "groq-sdk";
 import type { RawItem, ContentSchema } from "./types";
 
-const MODEL = "openai/gpt-oss-20b";
+const MODEL = "qwen/qwen3.8-27b";
 
 const SYSTEM_PROMPT = `You are a content editor for a public information website.
 Extract structured content from source articles.
