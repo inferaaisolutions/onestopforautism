@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DisclaimerBanner from "@/components/DisclaimerBanner";
@@ -12,13 +13,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-slate-50 text-slate-900 antialiased">
-        <DisclaimerBanner />
-        <Header />
-        <Transition>{children}</Transition>
-        <Footer />
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className="min-h-screen bg-slate-50 text-slate-900 antialiased">
+          <DisclaimerBanner />
+          <Header />
+          <Transition>{children}</Transition>
+          <Footer />
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
