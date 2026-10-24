@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-const STORAGE_KEY = "asd-guide-disclaimer-dismissed";
+const STORAGE_KEY = "onestopforautism-disclaimer-dismissed";
 
 export default function DisclaimerBanner() {
   const [dismissed, setDismissed] = useState(true);

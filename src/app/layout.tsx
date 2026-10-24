@@ -7,7 +7,7 @@ import DisclaimerBanner from "@/components/DisclaimerBanner";
 import Transition from "@/components/Transition";
 
 export const metadata: Metadata = {
-  title: "ASD Guide",
+  title: "One Stop for Autism",
   description: "A parent- and therapist-friendly guide to autism therapies, behaviors, and research from around the world.",
 };
 

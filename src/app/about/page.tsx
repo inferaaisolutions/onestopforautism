@@ -1,9 +1,9 @@
 export default function AboutPage() {
   return (
     <main className="mx-auto max-w-3xl space-y-6 px-4 py-10 text-slate-700">
-      <h1 className="text-3xl font-bold text-slate-800">About ASD Guide</h1>
+      <h1 className="text-3xl font-bold text-slate-800">About One Stop for Autism</h1>
       <p>
-        ASD Guide is an independent, informational platform built to help
+        One Stop for Autism is an independent, informational platform built to help
         parents and therapists discover the wide range of therapies and
         approaches used for autism spectrum disorder around the world — from
         long-established interventions like speech and occupational therapy

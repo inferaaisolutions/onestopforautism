@@ -26,11 +26,11 @@ export async function POST(req: Request): Promise<NextResponse> {
     await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL ?? "noreply@example.com",
       to: email,
-      subject: "Confirm your ASD Guide subscription",
+      subject: "Confirm your One Stop for Autism subscription",
       html: `
         <div style="font-family:sans-serif;max-width:480px;margin:0 auto;padding:24px;">
           <h2 style="color:#0d9488;">Confirm your subscription</h2>
-          <p>Click below to start receiving ASD Guide updates.</p>
+          <p>Click below to start receiving One Stop for Autism updates.</p>
           <p>
             <a href="${confirmUrl}"
                style="display:inline-block;background:#0d9488;color:#fff;padding:10px 20px;border-radius:6px;text-decoration:none;font-weight:600;">

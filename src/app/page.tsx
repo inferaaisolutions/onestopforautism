@@ -14,7 +14,7 @@ export default function HomePage() {
           One place to explore autism therapies from around the world
         </h1>
         <p className="mx-auto mt-4 max-w-2xl text-lg text-slate-600">
-          ASD Guide gathers therapies, behavior insights, and the latest
+          One Stop for Autism gathers therapies, behavior insights, and the latest
           research into one searchable resource for parents and therapists —
           always linked back to where it came from.
         </p>

@@ -20,7 +20,7 @@ export default function UnsubscribedPage({
         <>
           <h1 className="text-2xl font-bold text-slate-800">You&apos;ve been unsubscribed</h1>
           <p className="text-slate-600">
-            You won&apos;t receive any more emails from ASD Guide.
+            You won&apos;t receive any more emails from One Stop for Autism.
           </p>
         </>
       )}
@@ -28,7 +28,7 @@ export default function UnsubscribedPage({
         href="/"
         className="rounded bg-teal-700 px-6 py-2 text-sm font-medium text-white hover:bg-teal-600"
       >
-        Back to ASD Guide
+        Back to One Stop for Autism
       </Link>
     </main>
   );

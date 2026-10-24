@@ -21,7 +21,7 @@ export default function SubscribeConfirmedPage({
           <div className="text-5xl">✓</div>
           <h1 className="text-2xl font-bold text-slate-800">You&apos;re subscribed!</h1>
           <p className="text-slate-600">
-            You&apos;ll receive an email when new articles are published on ASD Guide.
+            You&apos;ll receive an email when new articles are published on One Stop for Autism.
           </p>
         </>
       )}
@@ -29,7 +29,7 @@ export default function SubscribeConfirmedPage({
         href="/"
         className="rounded bg-teal-700 px-6 py-2 text-sm font-medium text-white hover:bg-teal-600"
       >
-        Back to ASD Guide
+        Back to One Stop for Autism
       </Link>
     </main>
   );

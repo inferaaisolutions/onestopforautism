@@ -12,7 +12,7 @@ export default function Footer() {
         </div>
         <div className="space-y-2 text-sm text-slate-500">
           <p>
-            ASD Guide is an independent aggregation platform. Content is sourced
+            One Stop for Autism is an independent aggregation platform. Content is sourced
             from public websites, research, and community discussion, and
             remains the property of its original authors or publishers. We do
             not verify, endorse, or take responsibility for the accuracy of
